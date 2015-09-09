@@ -1,0 +1,6 @@
+with open("resultTitle") as reader:
+    content = [x.strip() for x in reader if len(x.strip()) > 0]
+content = [x[:x.index(".")] for x in content]
+content = [int(x) for x in content]
+with open("resultTitle2", "w+") as writer:
+    writer.writelines([str(x) + "\n" for x in sorted(content)])

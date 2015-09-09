@@ -1,0 +1,6 @@
+This program is for data analysis and pre-processing and execution of artificial neural network.
+All the datas are in /data folder. Different /data/titleOfDatax means different train, test sets.
+You could change the variable: titleKind, featureKind in main.py to choose the kind of train, test sets and feature.
+You could change the variable: processingState to change state between data processing(separate data to train data and test data based on titlelist in the folder)
+You could change the variable: doesMerge to True to merge some features to one file named featureKind, and change processingState to true to run ann and test the result.
+You could change hiddenLayerNode and maxIteration to change the parameter of ann
